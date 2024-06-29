@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 17, in script
+    show eileen happy
+Exception: Image 'eileen' does not accept attributes 'happy'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 17, in script
+    show eileen happy
+  File "C:\Users\death\Documents\ren.py\renpy-8.2.3-sdk\renpy\ast.py", line 1113, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\death\Documents\ren.py\renpy-8.2.3-sdk\renpy\ast.py", line 1076, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\death\Documents\ren.py\renpy-8.2.3-sdk\renpy\exports.py", line 739, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\death\Documents\ren.py\renpy-8.2.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\death\Documents\ren.py\renpy-8.2.3-sdk\renpy\display\displayable.py", line 246, in _duplicate
+    args.extraneous()
+  File "C:\Users\death\Documents\ren.py\renpy-8.2.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'eileen' does not accept attributes 'happy'.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.3.24061702
+Test 1 1.0
+Wed Jun 26 16:22:53 2024

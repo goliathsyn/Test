@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/characters.rpy", line 4: positional argument follows keyword argument
+    Character("Steven", color="33FF42", xalign 0.5 yalign 0.5)
+                                                ^
+
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Wed Jun 26 16:37:15 2024
